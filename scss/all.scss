@@ -74,6 +74,7 @@ body{
 .container{
     max-width: 1296px;
     margin: 0 auto;
+    margin-bottom: 160px;
 }
 .header{
     display: flex;
@@ -145,7 +146,7 @@ body{
         margin: 60px 0;
     }
     .service-list{
-        width: 30%;
+        width: 32%;
         border: 1px solid darken($main-color, 70);
         border-radius: 16px;
         padding: 60px 40px;
@@ -168,6 +169,19 @@ body{
 // 合作夥伴
 .partner{
     margin-top: 160px;
+    
+    h2{
+        @include heading_base(32px,900);
+        margin-bottom: 80px;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        li a img{
+            max-width: 160px;
+        }
+    }
 }
 // 推薦人
 .recommend{
@@ -211,4 +225,21 @@ body{
         }
     }
 }
+// =============================大白背區
+.container-wh{
+    background-color: #fff;
+    border-radius: 160px;
+    padding: 160px 0;
+}
+// 功能概覽
+.function-list{
+    max-width: 1296px;
+    margin: 0 auto;
     
+
+    h3{
+        @include heading_base(80px,900);
+        text-align: center;
+        color: #000;
+    }
+}

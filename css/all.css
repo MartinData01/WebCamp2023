@@ -71,6 +71,7 @@ body {
 .container {
   max-width: 1296px;
   margin: 0 auto;
+  margin-bottom: 160px;
 }
 
 .header {
@@ -180,7 +181,7 @@ body {
   margin: 60px 0;
 }
 .service .service-list {
-  width: 30%;
+  width: 32%;
   border: 1px solid #4d4d4d;
   border-radius: 16px;
   padding: 60px 40px;
@@ -208,6 +209,24 @@ body {
 
 .partner {
   margin-top: 160px;
+}
+.partner h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 80px;
+}
+.partner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.partner ul li a img {
+  max-width: 160px;
 }
 
 .recommend {
@@ -270,4 +289,23 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #fff;
+}
+
+.container-wh {
+  background-color: #fff;
+  border-radius: 160px;
+  padding: 160px 0;
+}
+
+.function-list {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.function-list h3 {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  color: #000;
 }
