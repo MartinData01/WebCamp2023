@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #000;
+  font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  max-width: 189px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.menu li {
+  list-style: none;
+  padding: 10px;
+}
+.menu li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.banner {
+  margin-bottom: 160px;
+}
+.banner h2 {
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
+}
+.banner button {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
+  padding: 20px 40px;
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+.banner button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.banner .banner-animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.banner .banner-animation img {
+  max-width: 540px;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.service h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
+  width: 40%;
+}
+.service h3 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
+  width: 60%;
+}
+.service .service-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 60px 0;
+}
+.service .service-list {
+  width: 30%;
+  border: 1px solid #4d4d4d;
+  border-radius: 16px;
+  padding: 60px 40px;
+}
+.service .service-list span {
+  font-size: 40px;
+  color: #fff;
+  width: 45px;
+  height: 67px;
+}
+.service .service-list h4 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 10px;
+}
+.service .service-list p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.partner {
+  margin-top: 160px;
+}
+
+.recommend {
+  margin-top: 160px;
+}
+.recommend ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.recommend ul li {
+  width: 32%;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.recommend ul li .recommend-star {
+  color: #fff;
+}
+.recommend ul li .recommend-star span {
+  font-size: 16px;
+}
+.recommend ul li .command-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+  margin: 20px 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.recommend ul li .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.recommend ul li .person .photo {
+  max-width: 48px;
+  margin-right: 16px;
+}
+.recommend ul li .person .info h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #fff;
+}
+.recommend ul li .person .info p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+}
