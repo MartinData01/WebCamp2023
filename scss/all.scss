@@ -54,7 +54,7 @@ img{
     max-width: 100%;
 	height: auto;
 }
-// --------------------------------
+// ------------------------------------------------------
 $main-color: #fff;
 
 @mixin heading_base($fz,$fw:400,$lh:1.2){
@@ -440,16 +440,21 @@ body{
             padding: 32px 0;
             display: flex;
             justify-content: space-between;
-            .socal{
-                @include heading_base(16px,700);
+            .copy-links{
                 display: flex;
-                gap: 20px;
                 p{
+                    @include heading_base(16px,700);
                     margin-right: 80px;
                 }
-                a{
+                .socal{
                     @include heading_base(16px,700);
-                    text-decoration: none;
+                    display: flex;
+                    gap: 20px;
+                    
+                    a{
+                        @include heading_base(16px,700);
+                        text-decoration: none;
+                    }
                 }
             }
             .to-top{
@@ -458,4 +463,113 @@ body{
             }
         }
     }
+}
+
+// =============  RWD  ================
+@media (max-width: 991px){
+
+}
+@media (max-width: 767px){
+    .container{
+        margin: 0 12px;
+        padding-bottom: 160px;
+    }
+    .banner{
+        h2{
+            font-size: 48px;
+            margin-top: 40px;
+        }
+        .banner-animation{
+            max-width: 100%;
+        }
+    }
+    .service{
+        h2{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 32px;
+            width: 100%;
+        }
+        .service-group{
+            flex-direction: column;
+            .service-list{
+                width: 100%;
+            }
+        }
+    }
+    .partner{
+        h2{
+            font-size: 20px;
+        }
+    }
+    .recommend{
+        ul{
+            flex-direction: column;
+            gap: 20px;
+            li{
+                width: 100%;
+            }
+        }
+    }
+    .container-wh{
+        border-radius: 20px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .function-list{
+        .big-title{
+            font-size: 32px;
+        }
+        .card-group{
+            flex-direction: column;
+            .card{
+                width: 100%;
+            }
+        }
+    }
+    .filter-group{
+        gap: 12px;
+        .filter-botton{
+            order: 1;
+        }
+        .type-group{
+            width: 100%;
+            flex-grow: 1;
+            order: 3;
+        }
+        select{
+            order: 2;
+        }
+    }
+    .container-bottom{
+        padding-left: 12px;
+        padding-right: 12px;
+        .our-service{
+            h2{
+                font-size: 32px;
+            }
+        }
+        .footer{
+            
+            .links{
+                flex-direction: column;
+                .other-page{
+                    order: 2;
+                    a{
+                        font-size: 48px;
+                    }
+                }
+                img{
+                    order: 1;
+                    margin-bottom: 40px;
+                }
+            }
+            .copyright{
+                flex-direction: column;
+            }
+        }
+    }
+    
+    
 }
