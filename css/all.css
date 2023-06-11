@@ -130,6 +130,8 @@ body {
   margin-top: 20px;
   margin-bottom: 100px;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .banner button:hover {
   background-color: #fff;
@@ -359,6 +361,8 @@ body {
   border: 1px solid #f2f2f2;
   border-radius: 16px;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .function-list .filter-group .filter-botton:hover {
   background-color: #f2f2f2;
@@ -380,8 +384,14 @@ body {
   border: 0;
   border-radius: 16px;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-.function-list .filter-group .type-group button:active {
+.function-list .filter-group .type-group button:hover {
+  color: #000;
+  background-color: #f2f2f2;
+}
+.function-list .filter-group .type-group .checked {
   color: #000;
   background-color: #f2f2f2;
 }
@@ -395,16 +405,17 @@ body {
   border: 1px solid #f2f2f2;
   border-radius: 16px;
 }
-.function-list .filter-group .card-group {
+.function-list .card-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 24px;
+  margin-bottom: 40px;
 }
-.function-list .filter-group .card-group .card {
-  width: 30%;
+.function-list .card-group .card {
+  width: 32%;
   border: 1px solid #caccd1;
   border-radius: 15px;
   overflow: hidden;
@@ -417,26 +428,187 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.function-list .filter-group .card-group .card a {
+.function-list .card-group .card a {
   display: block;
 }
-.function-list .filter-group .card-group .card .info {
+.function-list .card-group .card .info {
   padding: 20px;
   border-bottom: 1px solid #caccd1;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.function-list .filter-group .card-group .card .info h3 {
+.function-list .card-group .card .info h3 {
   font-size: 20px;
   font-weight: 900;
   line-height: 1.2;
   color: #fff;
   color: #000;
+  margin-bottom: 12px;
 }
-.function-list .filter-group .card-group .card .info span {
+.function-list .card-group .card .info span {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
   color: #fff;
+  color: #000;
+}
+.function-list .card-group .card .sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 32px;
+  border-bottom: 1px solid #caccd1;
+}
+.function-list .card-group .card .sort h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  color: #000;
+}
+.function-list .card-group .card .sort span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+  color: #000;
+}
+.function-list .card-group .card .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 32px;
+}
+.function-list .page-change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 4px;
+}
+.function-list .page-change button {
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 16px;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #fff;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.function-list .page-change button:hover {
+  border: 1px solid #000;
+}
+.function-list .page-change .checked {
+  background-color: #000;
+  color: #fff;
+}
+
+.container-bottom {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.container-bottom .our-service {
+  margin-top: 78px;
+  margin-bottom: 78px;
+  padding: 80px 0;
+}
+.container-bottom .our-service h2 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.container-bottom .our-service button {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
+  padding: 20px 32px;
+  background-color: #000;
+  border-radius: 16px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.container-bottom .our-service button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.container-bottom .footer .links {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.container-bottom .footer .links .other-page a {
+  display: block;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+}
+.container-bottom .footer .links img {
+  width: 245px;
+}
+.container-bottom .footer .copyright {
+  padding: 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container-bottom .footer .copyright .socal {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.container-bottom .footer .copyright .socal p {
+  margin-right: 80px;
+}
+.container-bottom .footer .copyright .socal a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+}
+.container-bottom .footer .copyright .to-top {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
 }
