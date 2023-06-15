@@ -75,6 +75,7 @@ body {
 }
 
 .header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,6 +96,18 @@ body {
   opacity: 0.8;
 }
 
+.navbar-btn {
+  display: none;
+  background-color: #000;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+.navbar-btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,6 +125,27 @@ body {
   color: #fff;
 }
 .menu li a:hover {
+  opacity: 0.8;
+}
+
+.navbar-collapse {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-height: calc(100vh - 70px); /* 佔滿整個瀏覽器高度扣掉 navbar 高度 */
+  background-color: #000;
+  border-top: 1px solid #fff;
+}
+.navbar-collapse ul li a {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-collapse ul li a:hover {
   opacity: 0.8;
 }
 
@@ -651,12 +685,38 @@ body {
     margin: 0 12px;
     padding-bottom: 160px;
   }
+  .navbar-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+  .navbar-collapse.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .banner h2 {
     font-size: 48px;
     margin-top: 40px;
   }
   .banner .banner-animation {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 30%;
+  }
+  .banner .banner-animation img {
     max-width: 100%;
+    height: auto;
   }
   .service h2 {
     font-size: 20px;
@@ -673,6 +733,9 @@ body {
   }
   .service .service-group .service-list {
     width: 100%;
+  }
+  .service .service-group .service-list .span {
+    font-size: 80px;
   }
   .partner h2 {
     font-size: 20px;
