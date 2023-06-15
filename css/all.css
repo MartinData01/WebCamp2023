@@ -91,6 +91,9 @@ body {
 .logo {
   max-width: 189px;
 }
+.logo a:hover {
+  opacity: 0.8;
+}
 
 .menu {
   display: -webkit-box;
@@ -107,6 +110,9 @@ body {
   font-weight: 700;
   line-height: 1.2;
   color: #fff;
+}
+.menu li a:hover {
+  opacity: 0.8;
 }
 
 .banner {
@@ -486,6 +492,10 @@ body {
           justify-content: space-between;
   padding: 20px 32px;
 }
+.function-list .card-group .card .tag a span {
+  text-decoration: none;
+  color: #000;
+}
 .function-list .page-change {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,6 +510,7 @@ body {
   height: 48px;
   border: 0;
   border-radius: 16px;
+  border: 1px solid #fff;
   background-color: #fff;
   font-size: 14px;
   font-weight: 700;
@@ -573,6 +584,9 @@ body {
   color: #fff;
   text-decoration: none;
 }
+.container-bottom .footer .links .other-page a:hover {
+  opacity: 0.8;
+}
 .container-bottom .footer .links img {
   width: 245px;
 }
@@ -584,6 +598,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .container-bottom .footer .copyright .copy-links {
   display: -webkit-box;
@@ -614,12 +631,19 @@ body {
   color: #fff;
   text-decoration: none;
 }
+.container-bottom .footer .copyright .copy-links .socal a:hover {
+  opacity: 0.8;
+}
 .container-bottom .footer .copyright .to-top {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
   color: #fff;
   text-decoration: none;
+}
+.container-bottom .footer .copyright .to-top:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 @media (max-width: 767px) {

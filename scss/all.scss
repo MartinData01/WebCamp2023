@@ -85,6 +85,9 @@ body{
 }
 .logo{
     max-width: 189px;
+    a:hover{
+        opacity: 0.8;
+    }
 }
 .menu{
     display: flex;
@@ -94,6 +97,9 @@ body{
         a{
             text-decoration: none;
             @include heading_base(16px,700);
+            &:hover{
+                opacity: 0.8;
+            }
         }
     }
 }
@@ -363,6 +369,10 @@ body{
                 display: flex;
                 justify-content: space-between;
                 padding: 20px 32px;
+                a span{
+                    text-decoration: none;
+                    color: #000;
+                }
             }
         }
     }
@@ -375,6 +385,7 @@ body{
             height: 48px;
             border: 0;
             border-radius: 16px;
+            border: 1px solid #fff;
             background-color: #fff;
             @include heading_base(14px,700,1.5);
             color: #000;
@@ -431,6 +442,9 @@ body{
                 display: block;
                 @include heading_base(80px,900);
                 text-decoration: none;
+                &:hover{
+                    opacity: 0.8;
+                }
             }
             img{
                 width: 245px;
@@ -440,6 +454,7 @@ body{
             padding: 32px 0;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             .copy-links{
                 display: flex;
                 p{
@@ -454,12 +469,19 @@ body{
                     a{
                         @include heading_base(16px,700);
                         text-decoration: none;
+                        &:hover{
+                            opacity: 0.8;
+                        }
                     }
                 }
             }
             .to-top{
                 @include heading_base(16px,700);
                 text-decoration: none;
+                &:hover{
+                    background-color: #fff;
+                    color: #000;
+                }
             }
         }
     }
