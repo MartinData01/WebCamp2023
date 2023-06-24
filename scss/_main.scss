@@ -87,6 +87,17 @@
             max-width: 540px;
         }
     }
+    @keyframes banner-grass {
+        0%{
+            top:-100%;
+        }
+        50%{
+            top: 0;
+        }
+        100%{
+            top: 100%;
+        }
+    }
     
 }
 // 我們的服務
@@ -141,15 +152,41 @@
         @include heading_base(32px,900);
         margin-bottom: 80px;
     }
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        li {
-            max-width: 160px;
-        }
+}
+.enterprise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    gap: 20px;
+    
+    &::before,&::after{
+        content: "";
+        position: absolute;
+        max-width: 196px;
+        height: 40px;
+        top: 0;
+    }
+    &::before{
+        left: 0;
+        padding-right: 196px;
+        background: linear-gradient(90deg,rgb(0, 0, 0, 1),rgb(0, 0, 0, 0.8),rgb(0, 0, 0, 0.5),rgb(0, 0, 0, 0.3));
+    }
+    &::after{
+        right: 0;
+        padding-left: 196px;
+        background: linear-gradient(to left,rgb(0, 0, 0, 1),rgb(0, 0, 0, 0.8),rgb(0, 0, 0, 0.5),rgb(0, 0, 0, 0.3));
+    }
+    li {
+        max-width: 160px;
     }
 }
+.mb-20{
+    margin-bottom: 20px;
+}
+
 // 推薦人
 .recommend{
     margin-top: 160px;
