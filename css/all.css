@@ -498,6 +498,9 @@ body {
   border: 1px solid #f2f2f2;
   border-radius: 16px;
 }
+.function-list .filter-group select:hover {
+  border-color: #000;
+}
 .function-list .card-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -679,6 +682,9 @@ body {
 .links img {
   width: 245px;
 }
+.links img:hover {
+  opacity: 0.8;
+}
 
 .copyright {
   padding: 32px 0;
@@ -732,8 +738,7 @@ body {
   text-decoration: none;
 }
 .copyright .to-top:hover {
-  background-color: #fff;
-  color: #000;
+  opacity: 0.8;
 }
 
 @media (max-width: 767px) {
