@@ -488,18 +488,55 @@ body {
   color: #000;
   background-color: #f2f2f2;
 }
-.function-list .filter-group select {
+.function-list .filter-group .dropdown {
+  position: relative;
+  cursor: pointer;
+}
+.function-list .filter-group .dropdown-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   color: #fff;
   color: #000;
+  background-color: #fff;
   padding: 20px 40px 20px 60px;
   border: 1px solid #f2f2f2;
   border-radius: 16px;
 }
-.function-list .filter-group select:hover {
+.function-list .filter-group .dropdown-btn:hover {
   border-color: #000;
+}
+.function-list .filter-group .dropdown-menu {
+  position: absolute;
+  right: 0;
+  display: none;
+  margin-top: 4px;
+  -webkit-box-shadow: 0px 0px 20px #c7c7c7;
+          box-shadow: 0px 0px 20px #c7c7c7;
+  padding: 20px 0;
+  border-radius: 16px;
+  background-color: #fff;
+}
+.function-list .filter-group .dropdown-menu li {
+  margin-bottom: 8px;
+}
+.function-list .filter-group .dropdown-menu a {
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+.function-list .filter-group .dropdown-menu a:hover {
+  background-color: #e9e9e9;
+}
+.function-list .filter-group .dropdown-menu.show {
+  display: block;
 }
 .function-list .card-group {
   display: -webkit-box;
