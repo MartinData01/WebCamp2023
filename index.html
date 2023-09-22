@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="tw">
+<html lang="zh-tw">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000">
-    <title>AI工具王</title>
+    <title>首頁 | AI工具王</title>
     <link rel="stylesheet" href="css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
-    
 </head>
 <body>
     <div class="container">
@@ -160,21 +159,23 @@
     <div class="container-wh">
         <div class="function-list">
             <h3 class="big-title">這些超酷的應用，都來自 AI工具王</h3>
+            <!-- 搜尋框 -->
             <label class="search-bar">
                 <span class="material-symbols-outlined">search</span>
                 <input type="search" placeholder="輸入關鍵字搜尋">
             </label>
+            <!-- 2個功能按鈕+篩選按鈕 -->
             <div class="filter-group">
                 <button type="button" class="filter-botton">篩選 <span class="material-symbols-outlined">filter_alt</span></button>
-                <div class="type-group">
-                    <button type="button" class="checked">全部</button>
-                    <button type="button">聊天</button>
-                    <button type="button">影像辨識</button>
-                    <button type="button">翻譯</button>
-                    <button type="button">行銷</button>
-                    <button type="button">客服</button>
-                    <button type="button">生產力</button>
-                </div>
+                <ul class="type-group">
+                    <li><button type="button" class="checked">全部</button></li>
+                    <li><button type="button">聊天</button></li>
+                    <li><button type="button">影像辨識</button></li>
+                    <li><button type="button">翻譯</button></li>
+                    <li><button type="button">行銷</button></li>
+                    <li><button type="button">客服</button></li>
+                    <li><button type="button">生產力</button></li>
+                </ul>
                 <div class="dropdown">
                     <button type="button" class="dropdown-btn">
                       <span class="dropdown-btnText">由新到舊</span>
@@ -192,6 +193,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- 功能介紹卡片 -->
             <ul class="card-group">
                 <li class="card">
                     <a href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/tool1.png" alt=""></a>

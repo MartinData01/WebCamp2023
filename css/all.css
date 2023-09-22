@@ -446,7 +446,7 @@ body {
           align-items: center;
   margin-bottom: 40px;
 }
-.function-list .filter-group .filter-botton {
+.function-list .filter-botton {
   padding: 20px 40px;
   color: #000;
   font-size: 16px;
@@ -457,16 +457,22 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.function-list .filter-group .filter-botton:hover {
+.function-list .filter-botton:hover {
   background-color: #f2f2f2;
 }
-.function-list .filter-group .filter-botton span {
+.function-list .filter-botton span {
   font-size: 16px;
 }
-.function-list .filter-group .type-group {
+.function-list .type-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
 }
-.function-list .filter-group .type-group button {
+.function-list .type-group button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
@@ -480,19 +486,19 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.function-list .filter-group .type-group button:hover {
+.function-list .type-group button:hover {
   color: #000;
   background-color: #f2f2f2;
 }
-.function-list .filter-group .type-group .checked {
+.function-list .type-group .checked {
   color: #000;
   background-color: #f2f2f2;
 }
-.function-list .filter-group .dropdown {
+.function-list .dropdown {
   position: relative;
   cursor: pointer;
 }
-.function-list .filter-group .dropdown-btn {
+.function-list .dropdown-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,10 +515,10 @@ body {
   border: 1px solid #f2f2f2;
   border-radius: 16px;
 }
-.function-list .filter-group .dropdown-btn:hover {
+.function-list .dropdown-btn:hover {
   border-color: #000;
 }
-.function-list .filter-group .dropdown-menu {
+.function-list .dropdown-menu {
   position: absolute;
   right: 0;
   display: none;
@@ -523,19 +529,19 @@ body {
   border-radius: 16px;
   background-color: #fff;
 }
-.function-list .filter-group .dropdown-menu li {
+.function-list .dropdown-menu li {
   margin-bottom: 8px;
 }
-.function-list .filter-group .dropdown-menu a {
+.function-list .dropdown-menu a {
   padding: 10px 40px;
   text-decoration: none;
   color: #000;
   display: block;
 }
-.function-list .filter-group .dropdown-menu a:hover {
+.function-list .dropdown-menu a:hover {
   background-color: #e9e9e9;
 }
-.function-list .filter-group .dropdown-menu.show {
+.function-list .dropdown-menu.show {
   display: block;
 }
 .function-list .card-group {
@@ -867,6 +873,8 @@ body {
   }
   .filter-group {
     gap: 12px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .filter-group .filter-botton {
     -webkit-box-ordinal-group: 2;
@@ -875,14 +883,20 @@ body {
   }
   .filter-group .type-group {
     width: 100%;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
   }
-  .filter-group select {
+  .filter-group .type-group button {
+    white-space: nowrap;
+  }
+  .filter-group .type-group::-webkit-scrollbar {
+    display: none;
+  }
+  .filter-group .dropdown {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
